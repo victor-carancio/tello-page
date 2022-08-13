@@ -1,0 +1,189 @@
+.agency{
+   
+
+    &-first-content{
+        background: $header-backgorund;
+        @include breakpoint-up(medium){
+            height:  500px;
+            display: flex;
+            flex-flow: row nowrap;
+            background-image: $agency-gradient-med, $first-img;
+            background-position: bottom center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @include breakpoint-up(large){
+            background-image: $agency-gradient-lg, $first-img;
+            height: 650px;
+            background-position: bottom center;
+        }
+
+    }
+
+    &-welder{
+        width: 100%;
+        height: 300px;
+        background-image: $first-img;
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include breakpoint-up(medium){
+            background-image: none;
+            order: 2;
+            width: 60%;
+            height: 100%;
+        }
+    }
+
+    
+    &-info-container{
+        width: 80%;
+        margin: auto;
+        
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        
+        
+        h2{
+            text-align: center;
+            margin: 45px 0;
+            font-size: $font-xl;
+            font-family: $font-fam-oswald;
+
+            font-weight: 700;
+            color: $title-color;
+        }
+
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            line-height: 1.4;
+            margin-bottom: 35px;
+            color: $white;
+            font-size: $font-med;
+        }
+
+        @include breakpoint-up(medium){
+            margin-left: 30px;
+            width: 550px;
+            h2{
+                font-size: $font-xl;
+                
+                width: 95%;
+            }
+            p{
+                width: 95%;
+                text-align: left;
+               
+            }
+        }
+
+        @include breakpoint-up(large){
+            margin-left: 70px;
+            h2{
+                width: 100%;
+            }
+        }
+
+    }
+
+    &-second-content{
+
+        background: $background-second-content;
+        width: 100%;       
+        height: auto;
+        
+        .second-title{
+           
+            
+            
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            font-size: $font-xlg;
+            color: $title-second-content;
+            padding-top: 50px; 
+            margin-bottom: 50px;
+        }
+        .cards-container{
+            margin-top: 40px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-self: center;
+            @include breakpoint-up(large){
+                
+                margin: auto;
+                width: 1000px;
+                flex-flow: row nowrap;
+                /* justify-content: space-between; */
+                  
+            }
+        }
+        
+
+       
+        .card{
+            
+            
+            height: 300px;
+            width: 300px;
+            
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            @include breakpoint-up(medium){
+                width: 400px;
+            }
+
+            @include breakpoint-up(large){
+                &:not(:last-child){
+                    margin-right: 20px;
+                }
+            }
+
+            &-icon{
+                margin-bottom: 40px;
+                width: 80px;
+                & path{
+                    fill: $icon-color;
+                }
+               
+            }
+            
+
+            &-title{
+                font-family: 'Oswald', sans-serif;
+                margin-bottom: 25px;
+                font-size: $font-l ;
+                font-weight: 600;
+                color: $title-second-content;
+            }
+
+            &-info{
+                letter-spacing: 0.3px;
+                font-family: 'Roboto', sans-serif;
+                text-align: center;
+                color: $header-backgorund;
+                @include breakpoint-up(medium){
+                    width: 280px;
+                }
+                a{
+                    color: $icon-color;
+                    font-weight: 600;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

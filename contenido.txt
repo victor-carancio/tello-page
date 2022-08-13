@@ -1,0 +1,37 @@
+header logo- contacto
+
+inicio, quienes somos (empresa), nuestros trabajos, colaboradores (o clientes), contacto
+
+Pagina inicio:  -header estatico, 
+                -informacion de empresa en resumen, 
+                -trabajos realizados (se muestran almenos 3 para permitir reedirigir a la seccion trabjaos), 
+                -colaboradores (podria no existir pagina de colaboradores), 
+                -contacto, 
+                -footer
+
+quienes somos:  -historia de empresa 
+                -mision 
+                -vision 
+                -certificacion iso 
+
+Nuestros trabajos:  -se muestra una lista de los trabajos realizados  
+                    -categorias: pernos, tuerca, etc (por confirmar numero de categorias)
+
+colaboradores:  -fotos de proyectos?????? (por confirmar)
+                -carrusel de imagenes con los colaboradores
+
+contacto: mails, telefonos, mapa
+
+pendientes: latin american foods, juan bas alimentos, laboratorio novobelle, manantial sa
+
+
+
+
+
+
+
+
+
+
+
+info de contacto: instagram --> https://www.instagram.com/metalmecanicartc/?hl=es

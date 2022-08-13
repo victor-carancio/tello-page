@@ -1,0 +1,182 @@
+.footer{
+    height: 850px;
+    background: $footer-background;
+    font-family: $font-fam-roboto;
+    
+    @include breakpoint-up(large){
+        height: 680px;
+    }
+    
+    &-logo{
+        width: 180px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        @include breakpoint-up(large){
+
+        }
+    }
+    
+  
+    &-container{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+
+        .column-row{
+        
+            @include breakpoint-up(large){
+                width: 750px;
+                
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: stretch;
+                justify-content: space-around;
+            }
+        }
+
+    }
+
+   
+    &-info{
+        /* margin-bottom: 600px; */
+        width: 100%;
+            
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+      
+         p{
+            font-family: $font-fam-roboto;
+            margin-top: 25px;
+            margin-left: 15px;
+            color: $footer-font-color;
+            text-align: center;
+         }
+    }
+
+    &-title{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        width: 180px;
+        color: $footer-font-color;
+        @include breakpoint-up(large){
+           height: 36px;
+        }
+    }
+
+    .empresa{
+        
+        text-align: center;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &-contact{
+      
+        justify-self: center;
+        
+        @include breakpoint-up(large){
+            width: 200px;
+            
+        }
+
+       .footer-title-contact{
+            color: white;
+            @include breakpoint-up(large){
+                margin-bottom: 35px;
+            }
+            
+       }
+
+        p{
+            
+            color: $footer-font-color;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-align: center;
+            @include breakpoint-up(large){
+                text-align: center;
+            
+            }
+        }
+        
+
+        .contact-info{
+            margin-bottom: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                margin-right: 10px;
+            }
+            @include breakpoint-up(large){
+
+                &:not(:last-child){
+                    margin-bottom: 32px;
+                }
+                align-items: flex-start;
+                justify-content: flex-start;
+                text-align: left;
+            
+            }
+        }
+    }
+   
+    &-page{
+        margin-top: 40px;
+        display: flex;
+        flex-flow: column nowrap ;
+    }
+
+    &-final{
+        width: 80%;
+
+        .footer-line{
+            height: 1px;
+            margin-top: 40px;
+            background: white;
+        }
+        p{
+            color: $footer-font-color;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+    }
+    
+    a{
+        color: $footer-font-color;
+        font-size: 15px;
+        &:hover{
+            color: $white;
+        }
+    }
+
+    .icon{
+        width: 18px;
+    }
+
+    .iso-logo{
+        width: 150px;
+    }
+
+    .place{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        
+        &-info{
+            margin-bottom: 30px;
+        }
+    }
+}

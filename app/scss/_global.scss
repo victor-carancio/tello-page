@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    max-width: 1980px;
+    min-width: 375px;
+    /* font-family: 'Roboto', sans-serif; */
+    
+}
+.no-scroll{
+    height: 100%;
+    overflow: hidden;
+
+}
+a{
+    text-decoration: none;
+}
+.content-body{
+    height: 2000px;
+}
+.button{
+    width: 150px;
+    padding: 18px 18px;
+    border-radius: 30px;
+    text-align: center;
+    
+   /*  background: $white;
+    font-family: 'Fraunces', serif;
+    color: $very-dark-desaturated-blue; */
+
+    &:hover{
+       /*  color: $white;
+        background-color: $white-desaturated; */
+        
+    }
+}
+//visibility
+
+/* .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:492px;
+    width:602px;
+}
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:492px;
+    width:602px;
+} */
+
+.google-maps{
+    
+    
+}
+.map-phone{
+   
+   
+    /* overflow: hidden;
+    display: flex;
+    justify-content: center; */
+   
+    
+}
+
+
+.hide-for-mobile {
+    @include breakpoint-down(medium){
+        display: none;
+    }    
+}
+
+
+.hide-for-desktop {
+    @include breakpoint-up(large){
+        display: none;
+    }
+}
+
+
+

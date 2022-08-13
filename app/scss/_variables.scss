@@ -1,0 +1,52 @@
+//colors
+/* $header-backgorund:#7B7485;  */
+$header-backgorund:rgb(7, 13, 33); // #070C20  #003B83  rgb(0, 23, 86)
+$toggle-color: rgb(236, 234, 234);
+$links-font-color: rgb(245, 245, 245);
+$links-hover-background: rgb(194, 194, 194);
+$open-menu-backgorund: #070C20; // #0064A1
+$contact-button-color: #87201C;
+$contact-button-hover: #EB6F51;
+
+
+$open-menu-header: rgb(23, 23, 24);
+
+
+
+//agency
+$title-color:#FFFADE;
+$agency-gradient-med: linear-gradient( to right, rgba(7, 13, 33, 1) , rgba(7, 13, 33, 0.25), rgba(0,0,0,0));
+$agency-gradient-lg: linear-gradient( to right, rgba(7, 13, 33, 1) , rgba(7, 13, 33, 0.4), rgba(0,0,0,0));
+
+//agency second content
+$background-second-content: #FAF8FF;
+$title-second-content: #005371 ; //verde:#2D8985    azul:#005371    rojo:#55191b
+$icon-color: #005371 ;
+
+$first-img: url('../../images/welder-2.jpg');
+//contact
+$gradient-opacity: 0.7;
+$gradient-color: rgba(15, 15, 15, $gradient-opacity);
+$linear-gradient-color: $gradient-color;
+$link-hover: rgb(235, 235, 0);
+
+
+//footer
+
+$footer-background: #222222;
+$footer-font-color: rgb(163, 163, 163);
+$nav-bar-font: 15px;
+$white: white;
+
+
+//fonts
+
+$font-xlg: 30px;
+$font-xl: 27px;
+$font-l: 22px;
+$font-med: 17px;
+$font-smed: 15px;
+
+$font-fam-oswald: 'Oswald', sans-serif;
+$font-fam-roboto: 'Roboto', sans-serif;
+
