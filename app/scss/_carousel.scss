@@ -1,21 +1,22 @@
 .carousel{
-    
+    padding-bottom: 8.75rem;
     background: $background-second-content;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3.75rem;
     
     
     &-title{
-        padding: 70px 0;
+        padding: 4.375rem 0;
         font-family: $font-fam-oswald;
         color: $title-second-content;
         font-size: $font-xlg;
         font-weight: 700;
         text-align: center;
         @include breakpoint-up(medium){
-            margin-top: 50px;
+            margin-top: 3.125rem;
         }
     }
 
@@ -24,22 +25,26 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        
-        padding: 30px 0px;
-        width: 90%;
+        align-items: center;
+        padding: 1.875rem 0;
+        width: 80%;
     }
 
     &-item{
-        min-width: 120px;
-        max-width: 220px;
-        height: 120px;
-        margin: 10px 10px;
-        border-radius: 10px;
+        
+        margin: 0.9375rem 0.9375rem;
+        border-radius: 0.625rem;
 
         img{
-            width: 200px;
-            height: 100%;
+
+            width: 7.5rem;
+            height: 7.5rem;
             object-fit: contain; 
+        }
+
+        .svg{
+            width: 5rem;
+            height: 5rem;
         }
 
         &:hover {

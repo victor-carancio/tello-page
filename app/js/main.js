@@ -5,9 +5,12 @@ const headerContainer = document.querySelector('.header-container');
 const fadeElems = document.querySelector('.has-fade');
 const body = document.querySelector('.body');
 
+//btn
 const home = document.getElementById('home-btn');
 const client= document.getElementById('client-btn');
 const contact = document.querySelectorAll('.contact-btn');
+const project = document.querySelectorAll('.projects-btn');
+const projectSection = document.getElementById('projects');
 
 //animations
 const contactSection = document.querySelector('.contact');
@@ -15,7 +18,6 @@ const contactAnimLeft = document.querySelectorAll('.contact-anim-left');
 const contactAnimRight = document.querySelectorAll('.contact-anim-right');
 const AnimNameLeft = 'animate__fadeInLeft';
 const AnimNameRight = 'animate__fadeInRight';
-
 
 
 btnHamburger.addEventListener('click', () => {
@@ -31,8 +33,7 @@ btnHamburger.addEventListener('click', () => {
         fadeElems.classList.add('fade-in');
         body.classList.add('no-scroll');
         btnHamburger.classList.add('open');
-    }
-    
+    }    
 
 });
 
@@ -58,7 +59,13 @@ contact.forEach((element) => {
 });
 
 
-
+project.forEach((element) => {
+    element.addEventListener('click', () => {
+        CloseHamburger();
+        projectSection.scrollIntoView();
+        window.scrollBy(0, -100);
+    })
+})
 
 function CloseHamburger(){
     header.classList.remove('open');

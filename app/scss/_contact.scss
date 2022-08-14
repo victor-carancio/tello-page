@@ -5,46 +5,43 @@
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        /* background-color: rgb(117, 112, 112); */
         background-image: linear-gradient($linear-gradient-color, $linear-gradient-color), url(../../images/contact/20200116_161011.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         
-        
     }
 
     &-header{
-        margin-top: 30px;
-        /* background: white; */
+        margin-top: 1.875rem;
         width: 80%;
         h2{
             font-family: $font-fam-oswald;
             text-align: center;
             color: $title-color;
-            font-size: 35px;
-            margin-bottom: 20px;
+            font-size: 2.1875rem;
+            margin-bottom: 1.25rem;
         }
 
         .contact-split{
-            height: 3px;
+            height: 0.1875rem;
             width: 40%;
             background: $title-color;
             margin: auto;
-            margin-bottom: 30px;
+            margin-bottom: 1.875rem;
             
         }
 
         p{
-            letter-spacing: 0.3px;
+            letter-spacing: 0.0187rem;
             font-family: 'Roboto', sans-serif;
             margin: auto;
-            width: 90%;
+            width: 75%;
             text-align: justify;
             color: $links-font-color;
-            font-size: 15px;
+            font-size: 1.0625rem;
             @include breakpoint-up(large){
-                margin-top: 40px;
+                margin-top: 2.5rem;
                 width: 80%;
             }
         }
@@ -52,14 +49,13 @@
     }
 
     &-adress{
-        width: 350px;
-       
+        width: 21.875rem;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         
         @include breakpoint-up(large){
-            min-height: 380px;
+            min-height: 23.75rem;
             width: 80%;
             flex-flow: row nowrap;
             justify-content: center;
@@ -67,35 +63,34 @@
 
         .info-container{
            
-            height: 125px;
-            margin-top: 30px;
-            margin-left: 20px;
-            /* margin-bottom: 50px; */
+            height: 7.8125rem;
+            margin-top: 1.875rem;
+            margin-left: 1.25rem;
             display: flex;
             flex-flow: column nowrap;
             justify-content: flex-start;
 
             @include breakpoint-up(large){
-                margin-left: 0px;
+                margin-left: 0;
                 align-items: center;
                 justify-content: space-around;
                 text-align: center;
             }
             p{
-                letter-spacing: 1px;
+                letter-spacing: 0.0625rem;
                 font-family: 'Roboto', sans-serif;
                 color: $background-second-content;
                 font-weight: 500;
                 font-size: $font-l;
-                margin-bottom: 15px;
+                margin-bottom: 0.9375rem;
             }
 
             a{
-                letter-spacing: 0.5px;
+                letter-spacing: 0.0313rem;
                 font-family: 'Roboto', sans-serif;
                 color: $links-font-color;
                 font-size: $font-smed;
-                width: 200px;
+                width: 12.5rem;
                 &:hover{
                     color: $link-hover;
                 }
@@ -103,70 +98,65 @@
 
             .info-title{
                 @include breakpoint-up(large){
-                    margin-top: 25px;
+                    margin-top: 1.5625rem;
                 }
                 
             }
 
             .email-title{
                 @include breakpoint-up(large){
-                    margin-top: 10px;
+                    margin-top: 0.625rem;
                 }
             }
         }
 
         .contact-place{
             
-            width: 300px;
-            height: 125px;
-            /* background: rgb(100, 44, 44); */
-            margin-top: 30px;
+            width: 18.75rem;
+            height: 7.8125rem;
+            margin-top: 1.875rem;
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
             @include breakpoint-up(large){
-                height: 225px;
+                height: 14.0625rem;
                 flex-flow: column nowrap;
-                margin-top: 30px;
+                margin-top: 1.875rem;
             }
             
             img{
-                width: 35px;
-                margin-left: 20px;
+                width: 2.1875rem;
+                margin-left: 1.25rem;
                 @include breakpoint-up(large){
                     margin-left: 0;
-                    margin-top: 15px;
+                    margin-top: 0.9375rem;
                 }
             }
         }
 
         .contact-numbers, .contact-email{
             
-            width: 300px;
-            height: 125px;
-            /* background: rgb(100, 44, 44); */
-            
+            width: 18.75rem;
+            height: 7.8125rem;
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
 
             @include breakpoint-up(large){
-                height: 225px;
+                height: 14.0625rem;
                 flex-flow:column nowrap;
-                margin-top: 30px;
+                margin-top: 1.875rem;
             }
 
-            
             img{
-                width: 35px;
-                margin-left: 20px;
+                width: 2.1875rem;
+                margin-left: 1.25rem;
                 @include breakpoint-up(large){
                     margin-left: 0;
-                    margin-top: 15px;
+                    margin-top: 0.9375rem;
                 }
             }
         }
-
        
     }
 }

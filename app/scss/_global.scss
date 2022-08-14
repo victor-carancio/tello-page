@@ -4,8 +4,8 @@
 
 }
 body{
-    max-width: 1980px;
-    min-width: 375px;
+    max-width: 123.75rem;
+    min-width: 23.4375rem;
     /* font-family: 'Roboto', sans-serif; */
     
 }
@@ -18,50 +18,13 @@ a{
     text-decoration: none;
 }
 .content-body{
-    height: 2000px;
+    height: 125rem;
 }
 .button{
-    width: 150px;
-    padding: 18px 18px;
-    border-radius: 30px;
+    width: 9.375rem;
+    padding: 1.25rem 2.5rem;
+    border-radius: 1.875rem;
     text-align: center;
-    
-   /*  background: $white;
-    font-family: 'Fraunces', serif;
-    color: $very-dark-desaturated-blue; */
-
-    &:hover{
-       /*  color: $white;
-        background-color: $white-desaturated; */
-        
-    }
-}
-//visibility
-
-/* .gmap_canvas {
-    overflow:hidden;
-    background:none!important;
-    height:492px;
-    width:602px;
-}
-.mapouter {
-    position:relative;
-    text-align:right;
-    height:492px;
-    width:602px;
-} */
-
-.google-maps{
-    
-    
-}
-.map-phone{
-   
-   
-    /* overflow: hidden;
-    display: flex;
-    justify-content: center; */
-   
     
 }
 
@@ -71,7 +34,6 @@ a{
         display: none;
     }    
 }
-
 
 .hide-for-desktop {
     @include breakpoint-up(large){

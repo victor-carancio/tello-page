@@ -1,10 +1,9 @@
 .agency{
    
-
     &-first-content{
         background: $header-backgorund;
         @include breakpoint-up(medium){
-            height:  500px;
+            height:  31.25rem;
             display: flex;
             flex-flow: row nowrap;
             background-image: $agency-gradient-med, $first-img;
@@ -14,7 +13,7 @@
         }
         @include breakpoint-up(large){
             background-image: $agency-gradient-lg, $first-img;
-            height: 650px;
+            height: 40.625rem;
             background-position: bottom center;
         }
 
@@ -22,7 +21,7 @@
 
     &-welder{
         width: 100%;
-        height: 300px;
+        height: 18.75rem;
         background-image: $first-img;
         background-position: bottom center;
         background-size: cover;
@@ -49,8 +48,8 @@
         
         h2{
             text-align: center;
-            margin: 45px 0;
-            font-size: $font-xl;
+            margin: 2.8125rem 0;
+            font-size: $font-xxlg;
             font-family: $font-fam-oswald;
 
             font-weight: 700;
@@ -62,14 +61,14 @@
             font-weight: 500;
             text-align: center;
             line-height: 1.4;
-            margin-bottom: 35px;
+            margin-bottom: 2.1875rem;
             color: $white;
             font-size: $font-med;
         }
 
         @include breakpoint-up(medium){
-            margin-left: 30px;
-            width: 550px;
+            margin-left: 1.875rem;
+            width: 34.375rem;
             h2{
                 font-size: $font-xl;
                 
@@ -83,7 +82,7 @@
         }
 
         @include breakpoint-up(large){
-            margin-left: 70px;
+            margin-left: 4.375rem;
             h2{
                 width: 100%;
             }
@@ -92,7 +91,7 @@
     }
 
     &-second-content{
-
+        padding-bottom: 7.5rem;
         background: $background-second-content;
         width: 100%;       
         height: auto;
@@ -106,11 +105,11 @@
             text-align: center;
             font-size: $font-xlg;
             color: $title-second-content;
-            padding-top: 50px; 
-            margin-bottom: 50px;
+            padding-top: 3.125rem; 
+            margin-bottom: 3.125rem;
         }
         .cards-container{
-            margin-top: 40px;
+            margin-top: 2.5rem;
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
@@ -118,7 +117,7 @@
             @include breakpoint-up(large){
                 
                 margin: auto;
-                width: 1000px;
+                width: 62.5rem;
                 flex-flow: row nowrap;
                 /* justify-content: space-between; */
                   
@@ -130,8 +129,8 @@
         .card{
             
             
-            height: 300px;
-            width: 300px;
+            height: 18.75rem;
+            width: 18.75rem;
             
             display: flex;
             flex-flow: column nowrap;
@@ -139,18 +138,18 @@
             align-items: center;
 
             @include breakpoint-up(medium){
-                width: 400px;
+                width: 25rem;
             }
 
             @include breakpoint-up(large){
                 &:not(:last-child){
-                    margin-right: 20px;
+                    margin-right: 1.25rem;
                 }
             }
 
             &-icon{
-                margin-bottom: 40px;
-                width: 80px;
+                margin-bottom: 2.5rem;
+                width: 5rem;
                 & path{
                     fill: $icon-color;
                 }
@@ -160,19 +159,19 @@
 
             &-title{
                 font-family: 'Oswald', sans-serif;
-                margin-bottom: 25px;
+                margin-bottom: 1.5625rem;
                 font-size: $font-l ;
                 font-weight: 600;
                 color: $title-second-content;
             }
 
             &-info{
-                letter-spacing: 0.3px;
+                letter-spacing: 0.0187rem;
                 font-family: 'Roboto', sans-serif;
                 text-align: center;
                 color: $header-backgorund;
                 @include breakpoint-up(medium){
-                    width: 280px;
+                    width: 17.5rem;
                 }
                 a{
                     color: $icon-color;

@@ -1,25 +1,24 @@
 .footer{
-    height: 850px;
+    height: 53.125rem;
     background: $footer-background;
     font-family: $font-fam-roboto;
     
     @include breakpoint-up(large){
-        height: 680px;
+        height: 42.5rem;
     }
     
     &-logo{
-        width: 180px;
-        margin-top: 50px;
-        margin-bottom: 40px;
+        width: 11.25rem;
+        margin-top: 3.125rem;
+        margin-bottom: 2.5rem;
         @include breakpoint-up(large){
 
         }
     }
-    
   
     &-container{
         width: 100%;
-        height: 500px;
+        height: 31.25rem;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
@@ -28,7 +27,7 @@
         .column-row{
         
             @include breakpoint-up(large){
-                width: 750px;
+                width: 46.875rem;
                 
                 display: flex;
                 flex-flow: row nowrap;
@@ -41,7 +40,7 @@
 
    
     &-info{
-        /* margin-bottom: 600px; */
+        
         width: 100%;
             
             display: flex;
@@ -51,21 +50,25 @@
       
          p{
             font-family: $font-fam-roboto;
-            margin-top: 25px;
-            margin-left: 15px;
+            margin-top: 1.5625rem;
+            margin-left: 0.9375rem;
             color: $footer-font-color;
             text-align: center;
+         }
+
+         .footer-title{
+            color: $footer-title;
          }
     }
 
     &-title{
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 14px;
-        width: 180px;
-        color: $footer-font-color;
+        font-size: $font-lmed;
+        width: 11.25rem;
+        color: $title-color;
         @include breakpoint-up(large){
-           height: 36px;
+           height: 2.25rem;
         }
     }
 
@@ -83,14 +86,14 @@
         justify-self: center;
         
         @include breakpoint-up(large){
-            width: 200px;
+            width: 12.5rem;
             
         }
 
        .footer-title-contact{
-            color: white;
+            color: $white;
             @include breakpoint-up(large){
-                margin-bottom: 35px;
+                margin-bottom: 2.1875rem;
             }
             
        }
@@ -98,30 +101,30 @@
         p{
             
             color: $footer-font-color;
-            font-size: 20px;
+            font-size: $font-lmed;
             font-weight: 600;
-            margin-bottom: 25px;
+            margin-bottom: 1.5625rem;
             text-align: center;
             @include breakpoint-up(large){
-                text-align: center;
+                text-align: left;
             
             }
         }
         
 
         .contact-info{
-            margin-bottom: 15px;
+            margin-bottom: 0.9375rem;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
             img{
-                margin-right: 10px;
+                margin-right: 0.625rem;
             }
             @include breakpoint-up(large){
 
                 &:not(:last-child){
-                    margin-bottom: 32px;
+                    margin-bottom: 2rem;
                 }
                 align-items: flex-start;
                 justify-content: flex-start;
@@ -132,7 +135,7 @@
     }
    
     &-page{
-        margin-top: 40px;
+        margin-top: 2.5rem;
         display: flex;
         flex-flow: column nowrap ;
     }
@@ -141,13 +144,13 @@
         width: 80%;
 
         .footer-line{
-            height: 1px;
-            margin-top: 40px;
-            background: white;
+            height: 0.0625rem;
+            margin-top: 2.5rem;
+            background: $white;
         }
         p{
             color: $footer-font-color;
-            margin-top: 40px;
+            margin-top: 2.5rem;
             text-align: center;
         }
 
@@ -155,28 +158,36 @@
     
     a{
         color: $footer-font-color;
-        font-size: 15px;
+        font-size: $font-smed;
         &:hover{
             color: $white;
         }
     }
 
     .icon{
-        width: 18px;
+        width: 1.125rem;
     }
 
     .iso-logo{
-        width: 150px;
+        width: 9.375rem;
     }
 
     .place{
+        
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         
         &-info{
-            margin-bottom: 30px;
+            
+            margin-bottom: 1.875rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            a{    
+               margin-left: 0.625rem;
+            }
         }
     }
 }

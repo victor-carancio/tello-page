@@ -8,17 +8,18 @@
         visibility: hidden;
         display: none;
         height: 0;
-       /*  opacity: 0; */
     }
+
     1%{
         visibility: visible;
-        /* opacity: 0; */
+        
     }
+
     to {
         visibility: visible;
         display: block;
         height: 100vh;
-       /*  opacity: 1; */
+       
     }
 }
 .fade-in{
@@ -28,16 +29,14 @@
 @keyframes fade-out{
     from{
         visibility: visible;
-        /* opacity: 1; */
         height: 100vh;
     }
     99%{
         visibility: visible;
-        /* opacity: 0; */
+  
     }
     to{
         visibility: hidden;
-       /*  opacity: 0; */
         height: 0;
     }
 }

@@ -1,4 +1,5 @@
 .projects{
+    background:$background-second-content ;
     &-container{
         display: flex;
         flex-flow: column nowrap;
@@ -6,7 +7,7 @@
         align-items: center;
 
         .projects-title{
-            margin: 30px 0;
+            margin: 1.875rem 0;
             font-family: $font-fam-oswald;
             font-size: $font-xlg;
             color: $title-second-content;
@@ -16,31 +17,49 @@
     }
 
     &-item{
+        width: 100%;
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: center;
 
         .item-title{
+           
             font-family: $font-fam-roboto;
-            font-size: $font-l;
+            font-size: $font-xl;
             font-weight: 600;
             color: $title-second-content;
-            margin-bottom: 25px;
+            margin: 5rem 0;
+            text-align: left;
             
         }
 
         .items-container{
+            
+            width: 60%;
             display: flex;
-            flex-direction: column;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+             @include breakpoint-up(medium){
+                width: 80%;
+             }
+
+             @include breakpoint-up(large){
+                width: 70%;
+             }
 
             img{
-                border-radius: 5px;
-                width: 300px;
-                height: 300px;
+                border-radius: 0.1875rem;
+                box-shadow: $img-border-shadow;
+                width: 15.625rem;
+                height: 15.625rem;
                 object-fit: cover; 
-                margin-bottom: 30px;
+                margin: 0 1.25rem;
+                margin-bottom: 3.75rem;
             }
+           
         }
     }
 }
