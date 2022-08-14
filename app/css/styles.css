@@ -1,4 +1,36 @@
-/* $header-backgorund:#7B7485;  */
+/* $header-background:#7B7485;  */
+.footer-home {
+  height: 21.875rem;
+  background: #222222;
+  font-family: "Roboto", sans-serif;
+}
+.footer-home-logo {
+  width: 11.25rem;
+  margin-top: 3.125rem;
+  margin-bottom: 2.5rem;
+}
+.footer-home .home-footer-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (min-width: 64em) {
+  .footer-home .home-footer-container .column-row {
+    width: 46.875rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+}
+.footer-home .footer-final {
+  margin: auto;
+  width: 80%;
+}
+
 .footer {
   height: 53.125rem;
   background: #222222;
@@ -577,7 +609,7 @@
     width: 34.375rem;
   }
   .agency-info-container h2 {
-    font-size: 1.6875rem;
+    font-size: 40px;
     width: 95%;
   }
   .agency-info-container p {
@@ -783,6 +815,146 @@
   transform: scale(1.2);
 }
 
+.categories {
+  font-family: "Roboto", sans-serif;
+}
+.categories-container {
+  width: 100%;
+}
+.categories .category {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 40em) {
+  .categories .category {
+    flex-flow: row nowrap;
+  }
+}
+.categories .category-img {
+  width: 100%;
+  height: 350px;
+}
+@media (min-width: 40em) {
+  .categories .category-img {
+    width: 40%;
+    height: 450px;
+  }
+}
+@media (min-width: 64em) {
+  .categories .category-img {
+    width: 60%;
+    height: 650px;
+  }
+}
+.categories .category-info {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (min-width: 40em) {
+  .categories .category-info {
+    height: 450px;
+    width: 60%;
+  }
+}
+@media (min-width: 64em) {
+  .categories .category-info {
+    height: 650px;
+    width: 40%;
+  }
+}
+.categories .category-info p {
+  margin: 0 40px;
+}
+.categories .category-info p:not(:last-child) {
+  margin-bottom: 45px;
+}
+.categories .category-info .cat-info-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.categories .category-info .cat-info-desc {
+  font-size: 16px;
+  font-weight: 400;
+}
+.categories .category-info .cat-info-link {
+  margin: 0 40px;
+  font-weight: 600;
+  font-size: 15px;
+  width: 110px;
+  padding: 0.3125rem 0;
+}
+.categories .category .dark-background {
+  background-color: rgb(7, 13, 33);
+}
+.categories .category .dark-title {
+  color: #FFFADE;
+}
+.categories .category .dark-p {
+  color: rgb(236, 234, 234);
+}
+.categories .category .dark-link {
+  color: rgb(236, 234, 234);
+  border-bottom: 0.0625rem solid rgb(236, 234, 234);
+}
+.categories .category .dark-link:hover {
+  width: 82px;
+  padding: 0.3125rem 0;
+  color: white;
+  border-bottom: 0.0625rem solid white;
+}
+.categories .category .light-background {
+  background-color: #FAF8FF;
+}
+.categories .category .light-title {
+  color: #005371;
+}
+.categories .category .light-p {
+  color: #0e6483;
+}
+.categories .category .light-link {
+  color: #0e6483;
+  border-bottom: 0.0625rem solid #0e6483;
+}
+.categories .category .light-link:hover {
+  width: 82px;
+  padding: 0.3125rem 0;
+  color: white;
+  border-bottom: 0.0625rem solid #005371;
+}
+.categories .category .image {
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+.categories .category .image-steel {
+  background-image: url("../../images/categories/7.jpg");
+}
+.categories .category .image-polyamide {
+  background-image: url("../../images/categories/2.jpg");
+}
+@media (min-width: 40em) {
+  .categories .category .image-polyamide {
+    order: 2;
+  }
+}
+.categories .category .image-stainless {
+  background-position: center center;
+  background-image: url("../../images/categories/3.jpg");
+}
+.categories .category .image-project {
+  background-image: url("../../images/categories/6.jpg");
+}
+@media (min-width: 40em) {
+  .categories .category .image-project {
+    order: 2;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -794,9 +966,17 @@ body {
   /* font-family: 'Roboto', sans-serif; */
 }
 
+h2 {
+  letter-spacing: 0.1875rem;
+}
+
 .no-scroll {
   height: 100%;
   overflow: hidden;
+}
+
+p {
+  line-height: 1.5;
 }
 
 a {

@@ -1,0 +1,42 @@
+.footer-home{
+    height: 21.875rem;
+    background: $footer-background;
+    font-family: $font-fam-roboto;
+        
+    &-logo{
+        width: 11.25rem;
+        margin-top: 3.125rem;
+        margin-bottom: 2.5rem;
+        @include breakpoint-up(large){
+
+        }
+    }
+  
+    .home-footer-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+
+        .column-row{
+        
+            @include breakpoint-up(large){
+                width: 46.875rem;
+                
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: stretch;
+                justify-content: space-around;
+            }
+        }
+
+    }
+
+    .footer-final{
+        margin: auto;
+        width: 80%;
+
+    }
+}

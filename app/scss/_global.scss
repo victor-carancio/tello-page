@@ -4,15 +4,22 @@
 
 }
 body{
+   
     max-width: 123.75rem;
     min-width: 23.4375rem;
     /* font-family: 'Roboto', sans-serif; */
     
 }
+ h2{
+    letter-spacing: 0.1875rem;
+}
 .no-scroll{
     height: 100%;
     overflow: hidden;
 
+}
+p{
+    line-height: 1.5;
 }
 a{
     text-decoration: none;

@@ -1,7 +1,7 @@
 .agency{
    
     &-first-content{
-        background: $header-backgorund;
+        background: $header-background;
         @include breakpoint-up(medium){
             height:  31.25rem;
             display: flex;
@@ -70,7 +70,7 @@
             margin-left: 1.875rem;
             width: 34.375rem;
             h2{
-                font-size: $font-xl;
+                font-size: $h2-size;
                 
                 width: 95%;
             }
@@ -169,7 +169,7 @@
                 letter-spacing: 0.0187rem;
                 font-family: 'Roboto', sans-serif;
                 text-align: center;
-                color: $header-backgorund;
+                color: $header-background;
                 @include breakpoint-up(medium){
                     width: 17.5rem;
                 }

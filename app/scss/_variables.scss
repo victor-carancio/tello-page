@@ -1,6 +1,6 @@
 //colors
-/* $header-backgorund:#7B7485;  */
-$header-backgorund:rgb(7, 13, 33); // #070C20  #003B83  rgb(0, 23, 86)
+/* $header-background:#7B7485;  */
+$header-background:rgb(7, 13, 33); // #070C20  #003B83  rgb(0, 23, 86)
 $toggle-color: rgb(236, 234, 234);
 $links-font-color: rgb(245, 245, 245);
 $links-hover-background: rgb(194, 194, 194);
@@ -19,6 +19,7 @@ $agency-gradient-lg: linear-gradient( to right, rgba(7, 13, 33, 1) , rgba(7, 13,
 //agency second content
 $background-second-content: #FAF8FF;
 $title-second-content: #005371 ; //verde:#2D8985    azul:#005371    rojo:#55191b
+$title-second-content-light: #0e6483 ;
 $icon-color: #005371 ;
 $img-border-shadow: rgba(0, 0, 0, 0.25) 0rem 0.875rem 1.75rem, rgba(0, 0, 0, 0.22) 0rem 0.625rem 0.625rem;
 
@@ -41,6 +42,7 @@ $white: white;
 
 //fonts
 
+$h2-size: 40px;
 $font-xxlg: 2.375rem;
 $font-xlg: 1.875rem;
 $font-xl: 1.6875rem;
