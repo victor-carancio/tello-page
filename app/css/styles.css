@@ -779,6 +779,9 @@
   margin: 0 1.25rem;
   margin-bottom: 3.75rem;
 }
+.projects-item .items-container img:hover {
+  transform: scale(1.2);
+}
 
 * {
   margin: 0;

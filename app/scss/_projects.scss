@@ -58,6 +58,9 @@
                 object-fit: cover; 
                 margin: 0 1.25rem;
                 margin-bottom: 3.75rem;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
            
         }
