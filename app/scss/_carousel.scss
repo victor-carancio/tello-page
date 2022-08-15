@@ -1,4 +1,4 @@
-.carousel{
+.carousel {
     padding-bottom: 8.75rem;
     background: $background-second-content;
     display: flex;
@@ -6,22 +6,20 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 3.75rem;
-    
-    
-    &-title{
+
+    &-title {
         padding: 4.375rem 0;
         font-family: $font-fam-oswald;
         color: $title-second-content;
         font-size: $font-xlg;
         font-weight: 700;
         text-align: center;
-        @include breakpoint-up(medium){
+        @include breakpoint-up(medium) {
             margin-top: 3.125rem;
         }
     }
 
-    &-container{
-        
+    &-container {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -30,19 +28,17 @@
         width: 80%;
     }
 
-    &-item{
-        
+    &-item {
         margin: 0.9375rem 0.9375rem;
         border-radius: 0.625rem;
 
-        img{
-
+        img {
             width: 7.5rem;
             height: 7.5rem;
-            object-fit: contain; 
+            object-fit: contain;
         }
 
-        .svg{
+        .svg {
             width: 5rem;
             height: 5rem;
         }

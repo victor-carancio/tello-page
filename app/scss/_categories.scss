@@ -1,35 +1,33 @@
-.categories{
+.categories {
     font-family: $font-fam-roboto;
-    &-container{
+    &-container {
         width: 100%;
     }
 
-    .category{
+    .category {
         width: 100%;
         display: flex;
         flex-flow: column nowrap;
 
-        @include breakpoint-up(medium){
+        @include breakpoint-up(medium) {
             flex-flow: row nowrap;
         }
 
-
-        &-img{
-            
+        &-img {
             width: 100%;
             height: 21.875rem;
-            @include breakpoint-up(medium){
+            @include breakpoint-up(medium) {
                 width: 40%;
                 height: 28.125rem;
             }
 
-            @include breakpoint-up(large){
+            @include breakpoint-up(large) {
                 width: 60%;
                 height: 40.625rem;
             }
         }
 
-        &-info{
+        &-info {
             width: 100%;
             height: 21.875rem;
             display: flex;
@@ -37,90 +35,90 @@
             justify-content: center;
             align-items: flex-start;
 
-            @include breakpoint-up(medium){
+            @include breakpoint-up(medium) {
                 height: 28.125rem;
                 width: 60%;
             }
 
-            @include breakpoint-up(large){
+            @include breakpoint-up(large) {
                 height: 40.625rem;
                 width: 40%;
             }
-            
 
-            p{
+            p {
                 margin: 0 2.5rem;
-                
-                
-                &:not(:last-child){
+
+                &:not(:last-child) {
                     margin-bottom: 2.8125rem;
                 }
             }
 
-            .cat-info-title{
-                
-                font-size: $h2-size;
+            .cat-info-title {
+                font-size: $font-xl;
+                @include breakpoint-up(medium) {
+                    font-size: $h2-size;
+                }
+
                 font-weight: 600;
             }
 
-            .cat-info-desc{
-                font-size: $font-lmed;
+            .cat-info-desc {
+                font-size: $font-med;
                 font-weight: 400;
+
+                @include breakpoint-up(medium) {
+                    font-size: $font-lmed;
+                }
             }
 
-            .cat-info-link{
+            .cat-info-link {
                 margin: 0 2.5rem;
                 font-weight: 600;
                 font-size: $font-lmed;
                 width: 9.0625rem;
                 padding: 0.3125rem 0;
-                
             }
-           
         }
 
-        .dark{
-            &-background{
+        .dark {
+            &-background {
                 background-color: $header-background;
             }
 
-            &-title{
+            &-title {
                 color: $title-color;
             }
 
-            &-p{
+            &-p {
                 color: $toggle-color;
             }
 
-            &-link{
-                
+            &-link {
                 color: $toggle-color;
                 border-bottom: 0.0625rem solid $toggle-color;
                 &:hover {
                     cursor: pointer;
-                    
+
                     padding: 0.3125rem 0;
                     opacity: 60%;
                     border-bottom: 0.0625rem solid $white;
                 }
             }
-           
         }
-        .light{
-            
-            &-background{
+        .light {
+            &-background {
                 background-color: $background-second-content;
             }
 
-            &-title{
+            &-title {
                 color: $title-second-content;
             }
 
-            &-p{
+            &-p {
                 color: $title-second-content-light;
             }
 
-            &-link{
+            &-link {
                 color: $title-second-content-light;
                 border-bottom: 0.0625rem solid $title-second-content-light;
                 &:hover {
@@ -132,36 +130,33 @@
             }
         }
 
-        .image{
+        .image {
             background-repeat: no-repeat;
             background-position: center bottom;
             background-size: cover;
 
-            &-steel{
-                background-image: url('../../images/categories/7.jpg');
+            &-steel {
+                background-image: url("../../images/categories/7.jpg");
             }
 
-            &-polyamide{
-                background-image: url('../../images/categories/2.jpg');
-                @include breakpoint-up(medium){
+            &-polyamide {
+                background-image: url("../../images/categories/2.jpg");
+                @include breakpoint-up(medium) {
                     order: 2;
                 }
-                
             }
 
-            &-stainless{
+            &-stainless {
                 background-position: center center;
-                background-image: url('../../images/categories/3.jpg');
+                background-image: url("../../images/categories/3.jpg");
             }
 
-            &-project{
-                background-image: url('../../images/categories/6.jpg');
-                @include breakpoint-up(medium){
+            &-project {
+                background-image: url("../../images/categories/6.jpg");
+                @include breakpoint-up(medium) {
                     order: 2;
                 }
             }
         }
-
-        
     }
 }

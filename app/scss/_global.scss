@@ -1,52 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
-
 }
-body{
-   
+body {
     max-width: 123.75rem;
     min-width: 23.4375rem;
-    /* font-family: 'Roboto', sans-serif; */
-    
 }
- h2{
+h2 {
     letter-spacing: 0.1875rem;
 }
-.no-scroll{
+.no-scroll {
     height: 100%;
     overflow: hidden;
-
 }
-p{
+p {
     line-height: 1.5;
 }
-a{
+a {
     text-decoration: none;
 }
-.content-body{
+.content-body {
     height: 125rem;
 }
-.button{
+.button {
     width: 9.375rem;
     padding: 1.25rem 2.5rem;
     border-radius: 1.875rem;
     text-align: center;
-    
 }
-
 
 .hide-for-mobile {
-    @include breakpoint-down(medium){
-        display: none;
-    }    
-}
-
-.hide-for-desktop {
-    @include breakpoint-up(large){
+    @include breakpoint-down(medium) {
         display: none;
     }
 }
 
-
-
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}

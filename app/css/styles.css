@@ -728,10 +728,15 @@
   }
 }
 .agency-second-content {
-  padding-bottom: 7.5rem;
   background: #FAF8FF;
   width: 100%;
   height: auto;
+  padding-bottom: 30px;
+}
+@media (min-width: 64em) {
+  .agency-second-content {
+    padding-bottom: 50px;
+  }
 }
 .agency-second-content .second-title {
   font-family: "Oswald", sans-serif;
@@ -777,10 +782,15 @@
 }
 .agency-second-content .card-icon {
   margin-bottom: 2.5rem;
-  width: 100px;
+  width: 80px;
 }
 .agency-second-content .card-icon path {
   fill: rgb(0, 82, 112);
+}
+@media (min-width: 64em) {
+  .agency-second-content .card-icon {
+    width: 100px;
+  }
 }
 .agency-second-content .card-title {
   font-family: "Oswald", sans-serif;
@@ -1050,12 +1060,22 @@
   margin-bottom: 2.8125rem;
 }
 .categories .category-info .cat-info-title {
-  font-size: 2.5rem;
+  font-size: 1.6875rem;
   font-weight: 600;
 }
+@media (min-width: 40em) {
+  .categories .category-info .cat-info-title {
+    font-size: 2.5rem;
+  }
+}
 .categories .category-info .cat-info-desc {
-  font-size: 1.25rem;
+  font-size: 1.0625rem;
   font-weight: 400;
+}
+@media (min-width: 40em) {
+  .categories .category-info .cat-info-desc {
+    font-size: 1.25rem;
+  }
 }
 .categories .category-info .cat-info-link {
   margin: 0 2.5rem;

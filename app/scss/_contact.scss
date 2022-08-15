@@ -1,21 +1,24 @@
-.contact{
-    &-container{
+.contact {
+    &-container {
         width: 100%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        background-image: linear-gradient($linear-gradient-color, $linear-gradient-color), url(../../images/contact/20200116_161011.jpg);
+        background-image: linear-gradient(
+                $linear-gradient-color,
+                $linear-gradient-color
+            ),
+            url(../../images/contact/20200116_161011.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        
     }
 
-    &-header{
+    &-header {
         margin-top: 1.875rem;
         width: 80%;
-        h2{
+        h2 {
             font-family: $font-fam-oswald;
             text-align: center;
             color: $title-color;
@@ -23,46 +26,43 @@
             margin-bottom: 1.25rem;
         }
 
-        .contact-split{
+        .contact-split {
             height: 0.1875rem;
             width: 40%;
             background: $title-color;
             margin: auto;
             margin-bottom: 1.875rem;
-            
         }
 
-        p{
+        p {
             letter-spacing: 0.0187rem;
-            font-family: 'Roboto', sans-serif;
+            font-family: "Roboto", sans-serif;
             margin: auto;
             width: 75%;
             text-align: justify;
             color: $links-font-color;
             font-size: 1.0625rem;
-            @include breakpoint-up(large){
+            @include breakpoint-up(large) {
                 margin-top: 2.5rem;
                 width: 80%;
             }
         }
-
     }
 
-    &-adress{
+    &-adress {
         width: 21.875rem;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        
-        @include breakpoint-up(large){
+
+        @include breakpoint-up(large) {
             min-height: 20rem;
             width: 80%;
             flex-flow: row nowrap;
             justify-content: center;
         }
 
-        .info-container{
-           
+        .info-container {
             height: 7.8125rem;
             margin-top: 1.875rem;
             margin-left: 1.25rem;
@@ -70,105 +70,100 @@
             flex-flow: column nowrap;
             justify-content: flex-start;
 
-            @include breakpoint-up(large){
+            @include breakpoint-up(large) {
                 margin-left: 0;
                 align-items: center;
                 justify-content: space-around;
                 text-align: center;
             }
-            p{
+            p {
                 letter-spacing: 0.0625rem;
-                font-family: 'Roboto', sans-serif;
+                font-family: "Roboto", sans-serif;
                 color: $background-second-content;
                 font-weight: 500;
                 font-size: $font-l;
                 margin-bottom: 0.9375rem;
             }
 
-            a{
+            a {
                 letter-spacing: 0.0313rem;
-                font-family: 'Roboto', sans-serif;
+                font-family: "Roboto", sans-serif;
                 color: $links-font-color;
                 font-size: $font-smed;
                 width: 12.5rem;
-                &:hover{
+                &:hover {
                     color: $link-hover;
                 }
             }
 
-            .info-title{
-                @include breakpoint-up(large){
+            .info-title {
+                @include breakpoint-up(large) {
                     margin-top: 1.5625rem;
                 }
-                
             }
 
-            .email-title{
-                @include breakpoint-up(large){
+            .email-title {
+                @include breakpoint-up(large) {
                     margin-top: 0.625rem;
                 }
             }
 
-            .ig-title{
-                @include breakpoint-up(large){
+            .ig-title {
+                @include breakpoint-up(large) {
                     margin-top: 0.875rem;
                 }
             }
         }
 
-        .contact-place{
-            
+        .contact-place {
             width: 18.75rem;
             height: 7.8125rem;
             margin-top: 1.875rem;
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-            @include breakpoint-up(large){
+            @include breakpoint-up(large) {
                 height: 14.0625rem;
                 flex-flow: column nowrap;
                 margin-top: 1.875rem;
             }
-            
-            img{
+
+            img {
                 width: 2.1875rem;
                 margin-left: 1.25rem;
-                @include breakpoint-up(large){
+                @include breakpoint-up(large) {
                     margin-left: 0;
                     margin-top: 0.9375rem;
                 }
             }
         }
 
-        .contact-numbers, .contact-email{
-            
+        .contact-numbers,
+        .contact-email {
             width: 18.75rem;
             height: 7.8125rem;
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
 
-            @include breakpoint-up(large){
+            @include breakpoint-up(large) {
                 height: 14.0625rem;
-                flex-flow:column nowrap;
+                flex-flow: column nowrap;
                 margin-top: 1.875rem;
             }
 
-            img{
+            img {
                 width: 2.1875rem;
                 margin-left: 1.25rem;
-                @include breakpoint-up(large){
+                @include breakpoint-up(large) {
                     margin-left: 0;
                     margin-top: 0.9375rem;
                 }
             }
         }
-       
     }
 
-    
-
-    &-map{
+    &-map {
         width: auto;
         height: 23.75rem;
         display: flex;
@@ -176,36 +171,32 @@
         justify-content: flex-start;
         align-items: center;
 
-       
-
-        @include breakpoint-up (large){
+        @include breakpoint-up(large) {
             height: 41.875rem;
         }
-        .contact-place-info{
-            
+        .contact-place-info {
             width: 18.75rem;
             height: 7.8125rem;
-            
+
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
             justify-content: center;
-            @include breakpoint-up(large){
+            @include breakpoint-up(large) {
                 height: 14.0625rem;
                 flex-flow: column nowrap;
-                
             }
-            
-            img{
+
+            img {
                 width: 2.1875rem;
                 margin-left: 1.25rem;
-                @include breakpoint-up(large){
+                @include breakpoint-up(large) {
                     margin-left: 0;
                     margin-top: 0.9375rem;
                 }
             }
 
-            .info-container{
+            .info-container {
                 height: 7.8125rem;
                 margin-top: 1.875rem;
                 margin-left: 1.25rem;
@@ -213,57 +204,54 @@
                 flex-flow: column nowrap;
                 justify-content: flex-start;
 
-                @include breakpoint-up(large){
+                @include breakpoint-up(large) {
                     margin-top: 0;
                     margin-left: 0;
                     align-items: center;
                     justify-content: space-around;
                     text-align: center;
                 }
-                p{
+                p {
                     letter-spacing: 0.0625rem;
-                    font-family: 'Roboto', sans-serif;
+                    font-family: "Roboto", sans-serif;
                     color: $background-second-content;
                     font-weight: 500;
                     font-size: $font-l;
                     margin-bottom: 0.9375rem;
                 }
-    
-                a{
+
+                a {
                     letter-spacing: 0.0313rem;
-                    font-family: 'Roboto', sans-serif;
+                    font-family: "Roboto", sans-serif;
                     color: $links-font-color;
                     font-size: $font-smed;
                     width: 12.5rem;
-                    &:hover{
+                    &:hover {
                         color: $link-hover;
                     }
                 }
             }
         }
 
-        .mapouter-desktop{
-            
-            height:0;
-            width:0;
-            @include breakpoint-up(large){
-                position:relative;
-                text-align:right;
-                height:25rem;
-                width:40.625rem;
+        .mapouter-desktop {
+            height: 0;
+            width: 0;
+            @include breakpoint-up(large) {
+                position: relative;
+                text-align: right;
+                height: 25rem;
+                width: 40.625rem;
             }
         }
-        .gmap_canvas-desktop{
-            height:0rem;
-            width:0rem;
-            @include breakpoint-up(large){
-            overflow:hidden;
-            background:none!important;
-            height:25rem;
-            width:40.625rem;
+        .gmap_canvas-desktop {
+            height: 0rem;
+            width: 0rem;
+            @include breakpoint-up(large) {
+                overflow: hidden;
+                background: none !important;
+                height: 25rem;
+                width: 40.625rem;
             }
         }
-
     }
 }
-

@@ -1,22 +1,21 @@
-.footer{
+.footer {
     height: 53.125rem;
     background: $footer-background;
     font-family: $font-fam-roboto;
-    
-    @include breakpoint-up(large){
+
+    @include breakpoint-up(large) {
         height: 42.5rem;
     }
-    
-    &-logo{
+
+    &-logo {
         width: 11.25rem;
         margin-top: 3.125rem;
         margin-bottom: 2.5rem;
-        @include breakpoint-up(large){
-
+        @include breakpoint-up(large) {
         }
     }
-  
-    &-container{
+
+    &-container {
         width: 100%;
         height: 31.25rem;
         display: flex;
@@ -24,169 +23,152 @@
         align-items: center;
         justify-content: flex-start;
 
-        .column-row{
-        
-            @include breakpoint-up(large){
+        .column-row {
+            @include breakpoint-up(large) {
                 width: 46.875rem;
-                
+
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: stretch;
                 justify-content: space-around;
             }
         }
-
     }
 
-   
-    &-info{
-        
+    &-info {
         width: 100%;
-            
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
-      
-         p{
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        p {
             font-family: $font-fam-roboto;
             margin-top: 1.5625rem;
             margin-left: 0.9375rem;
             color: $footer-font-color;
             text-align: center;
-         }
+        }
 
-         .footer-title{
+        .footer-title {
             color: $footer-title;
-         }
+        }
     }
 
-    &-title{
-        font-family: 'Montserrat', sans-serif;
+    &-title {
+        font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-size: $font-lmed;
         width: 11.25rem;
         color: $title-color;
-        @include breakpoint-up(large){
-           height: 2.25rem;
+        @include breakpoint-up(large) {
+            height: 2.25rem;
         }
     }
 
-    .empresa{
-        
+    .empresa {
         text-align: center;
         justify-self: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
-    &-contact{
-      
+    &-contact {
         justify-self: center;
-        
-        @include breakpoint-up(large){
+
+        @include breakpoint-up(large) {
             width: 12.5rem;
-            
         }
 
-       .footer-title-contact{
+        .footer-title-contact {
             color: $white;
-            @include breakpoint-up(large){
+            @include breakpoint-up(large) {
                 margin-bottom: 2.1875rem;
             }
-            
-       }
+        }
 
-        p{
-            
+        p {
             color: $footer-font-color;
             font-size: $font-lmed;
             font-weight: 600;
             margin-bottom: 1.5625rem;
             text-align: center;
-            @include breakpoint-up(large){
+            @include breakpoint-up(large) {
                 text-align: left;
-            
             }
         }
-        
 
-        .contact-info{
+        .contact-info {
             margin-bottom: 0.9375rem;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
-            img{
+            img {
                 margin-right: 0.625rem;
             }
-            @include breakpoint-up(large){
-
-                &:not(:last-child){
+            @include breakpoint-up(large) {
+                &:not(:last-child) {
                     margin-bottom: 2rem;
                 }
                 align-items: flex-start;
                 justify-content: flex-start;
                 text-align: left;
-            
             }
         }
     }
-   
-    &-page{
+
+    &-page {
         margin-top: 2.5rem;
         display: flex;
-        flex-flow: column nowrap ;
+        flex-flow: column nowrap;
     }
 
-    &-final{
+    &-final {
         width: 80%;
 
-        .footer-line{
+        .footer-line {
             height: 0.0625rem;
             margin-top: 2.5rem;
             background: $white;
         }
-        p{
+        p {
             color: $footer-font-color;
             margin-top: 2.5rem;
             text-align: center;
         }
-
     }
-    
-    a{
+
+    a {
         color: $footer-font-color;
         font-size: $font-smed;
-        &:hover{
+        &:hover {
             color: $white;
         }
     }
 
-    .icon{
+    .icon {
         width: 1.125rem;
     }
 
-    .iso-logo{
+    .iso-logo {
         width: 9.375rem;
     }
 
-    .place{
-        
+    .place {
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: center;
-        
-        &-info{
-            
+
+        &-info {
             margin-bottom: 1.875rem;
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            a{    
-               margin-left: 0.625rem;
+            a {
+                margin-left: 0.625rem;
             }
         }
     }
