@@ -1,22 +1,24 @@
 .projects{
-    background:$background-second-content ;
+    
     &-container{
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
 
-        .projects-title{
-            margin: 1.875rem 0;
-            font-family: $font-fam-oswald;
-            font-size: $font-xlg;
-            color: $title-second-content;
+        .projects-header{
+            height: 300px;
+            .projects-title{
+                margin: 1.875rem 0;
+                font-family: $font-fam-oswald;
+                font-size: $font-xlg;
+                color: $title-second-content;
+            }
         }
-
-
     }
 
     &-item{
+        
         width: 100%;
         display: flex;
         flex-flow: column;
@@ -25,12 +27,15 @@
 
         .item-title{
            
-            font-family: $font-fam-roboto;
-            font-size: $font-xl;
+            font-family: $font-fam-oswald;
+            font-size: 25px;
             font-weight: 600;
             color: $title-second-content;
             margin: 5rem 0;
             text-align: left;
+            @include breakpoint-up(medium){
+                font-size: 35px;
+            }   
             
         }
 
@@ -43,26 +48,68 @@
             align-items: center;
 
              @include breakpoint-up(medium){
-                width: 80%;
+                width: 90%;
              }
 
              @include breakpoint-up(large){
-                width: 70%;
+                width: 85%;
              }
 
             img{
-                border-radius: 0.1875rem;
+                
+                border-radius: 10px;
                 box-shadow: $img-border-shadow;
-                width: 15.625rem;
-                height: 15.625rem;
+                width: 300px;
+                height: 300px;
                 object-fit: cover; 
                 margin: 0 1.25rem;
                 margin-bottom: 3.75rem;
                 &:hover {
-                    transform: scale(1.2);
+                    transform: scale(1.1);
                 }
             }
            
         }
     }
+
+    &-steel{
+       
+        background-color: rgb(190, 190, 190);
+        background-image: url('../../images/trabajos-tello/background/floating-cogs.svg');
+        background-repeat: no-repeat;
+        background-position:  left center;
+        background-size: cover;
+      
+    }
+
+    &-polyamide{
+        
+        background-color: rgb(190, 190, 190);
+        background-image: url('../../images/trabajos-tello/background/floating-cogs.svg');
+        background-repeat: no-repeat;
+        background-position:  left center;
+        background-size: cover;
+      
+    }
+    
+
+    &-stainless{
+        background-color: rgb(190, 190, 190);
+        background-image: url('../../images/trabajos-tello/background/floating-cogs.svg');
+        background-repeat: no-repeat;
+        background-position:  left center;
+        background-size: cover;
+     
+    }
+    
+
+    &-projects{
+        background-color: rgb(190, 190, 190);
+        background-image: url('../../images/trabajos-tello/background/floating-cogs.svg');
+        background-repeat: no-repeat;
+        background-position:  left center;
+        background-size: cover;
+       
+    }
+    
 }

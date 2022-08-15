@@ -68,10 +68,9 @@
 
         @include breakpoint-up(medium){
             margin-left: 1.875rem;
-            width: 34.375rem;
+            width: 37.5rem;
             h2{
                 font-size: $h2-size;
-                
                 width: 95%;
             }
             p{
@@ -83,6 +82,7 @@
 
         @include breakpoint-up(large){
             margin-left: 4.375rem;
+            width: 50rem;
             h2{
                 width: 100%;
             }

@@ -441,7 +441,7 @@
 }
 @media (min-width: 64em) {
   .contact-adress {
-    min-height: 320px;
+    min-height: 20rem;
     width: 80%;
     flex-flow: row nowrap;
     justify-content: center;
@@ -493,7 +493,7 @@
 }
 @media (min-width: 64em) {
   .contact-adress .info-container .ig-title {
-    margin-top: 14px;
+    margin-top: 0.875rem;
   }
 }
 .contact-adress .contact-place {
@@ -545,18 +545,31 @@
     margin-top: 0.9375rem;
   }
 }
+.contact-map {
+  width: auto;
+  height: 23.75rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (min-width: 64em) {
+  .contact-map {
+    height: 41.875rem;
+  }
+}
 .contact-map .contact-place-info {
   width: 18.75rem;
   height: 7.8125rem;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-content: center;
 }
 @media (min-width: 64em) {
   .contact-map .contact-place-info {
     height: 14.0625rem;
     flex-flow: column nowrap;
-    margin-top: 1.875rem;
   }
 }
 .contact-map .contact-place-info img {
@@ -603,6 +616,30 @@
 }
 .contact-map .contact-place-info .info-container a:hover {
   color: rgb(235, 235, 0);
+}
+.contact-map .mapouter-desktop {
+  height: 0;
+  width: 0;
+}
+@media (min-width: 64em) {
+  .contact-map .mapouter-desktop {
+    position: relative;
+    text-align: right;
+    height: 25rem;
+    width: 40.625rem;
+  }
+}
+.contact-map .gmap_canvas-desktop {
+  height: 0rem;
+  width: 0rem;
+}
+@media (min-width: 64em) {
+  .contact-map .gmap_canvas-desktop {
+    overflow: hidden;
+    background: none !important;
+    height: 25rem;
+    width: 40.625rem;
+  }
 }
 
 .agency-first-content {
@@ -670,7 +707,7 @@
 @media (min-width: 40em) {
   .agency-info-container {
     margin-left: 1.875rem;
-    width: 34.375rem;
+    width: 37.5rem;
   }
   .agency-info-container h2 {
     font-size: 40px;
@@ -684,6 +721,7 @@
 @media (min-width: 64em) {
   .agency-info-container {
     margin-left: 4.375rem;
+    width: 50rem;
   }
   .agency-info-container h2 {
     width: 100%;
@@ -818,16 +856,16 @@
   transform: scale(1.2);
 }
 
-.projects {
-  background: #FAF8FF;
-}
 .projects-container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
-.projects-container .projects-title {
+.projects-container .projects-header {
+  height: 300px;
+}
+.projects-container .projects-header .projects-title {
   margin: 1.875rem 0;
   font-family: "Oswald", sans-serif;
   font-size: 1.875rem;
@@ -841,12 +879,17 @@
   align-items: center;
 }
 .projects-item .item-title {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6875rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
   font-weight: 600;
   color: #005371;
   margin: 5rem 0;
   text-align: left;
+}
+@media (min-width: 40em) {
+  .projects-item .item-title {
+    font-size: 35px;
+  }
 }
 .projects-item .items-container {
   width: 60%;
@@ -857,26 +900,54 @@
 }
 @media (min-width: 40em) {
   .projects-item .items-container {
-    width: 80%;
+    width: 90%;
   }
 }
 @media (min-width: 64em) {
   .projects-item .items-container {
-    width: 70%;
+    width: 85%;
   }
 }
 .projects-item .items-container img {
-  border-radius: 0.1875rem;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0rem 0.875rem 1.75rem, rgba(0, 0, 0, 0.22) 0rem 0.625rem 0.625rem;
-  width: 15.625rem;
-  height: 15.625rem;
+  width: 300px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 1.25rem;
   margin-bottom: 3.75rem;
 }
 .projects-item .items-container img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+.projects-steel {
+  background-color: rgb(190, 190, 190);
+  background-image: url("../../images/trabajos-tello/background/floating-cogs.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+.projects-polyamide {
+  background-color: rgb(190, 190, 190);
+  background-image: url("../../images/trabajos-tello/background/floating-cogs.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+.projects-stainless {
+  background-color: rgb(190, 190, 190);
+  background-image: url("../../images/trabajos-tello/background/floating-cogs.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+.projects-projects {
+  background-color: rgb(190, 190, 190);
+  background-image: url("../../images/trabajos-tello/background/floating-cogs.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
 }
 
 .categories {
@@ -966,9 +1037,9 @@
   border-bottom: 0.0625rem solid rgb(236, 234, 234);
 }
 .categories .category .dark-link:hover {
-  width: 82px;
+  cursor: pointer;
   padding: 0.3125rem 0;
-  color: white;
+  opacity: 60%;
   border-bottom: 0.0625rem solid white;
 }
 .categories .category .light-background {
@@ -985,10 +1056,10 @@
   border-bottom: 0.0625rem solid #0e6483;
 }
 .categories .category .light-link:hover {
-  width: 82px;
+  cursor: pointer;
   padding: 0.3125rem 0;
-  color: white;
-  border-bottom: 0.0625rem solid #005371;
+  opacity: 60%;
+  border-bottom: 0.0625rem solid #0e6483;
 }
 .categories .category .image {
   background-repeat: no-repeat;

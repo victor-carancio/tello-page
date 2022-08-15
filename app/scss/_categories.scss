@@ -97,9 +97,10 @@
                 color: $toggle-color;
                 border-bottom: 0.0625rem solid $toggle-color;
                 &:hover {
-                    width: 82px;
+                    cursor: pointer;
+                    
                     padding: 0.3125rem 0;
-                    color: $white;
+                    opacity: 60%;
                     border-bottom: 0.0625rem solid $white;
                 }
             }
@@ -123,10 +124,10 @@
                 color: $title-second-content-light;
                 border-bottom: 0.0625rem solid $title-second-content-light;
                 &:hover {
-                    width: 82px;
+                    cursor: pointer;
                     padding: 0.3125rem 0;
-                    color: $white;
-                    border-bottom: 0.0625rem solid $title-second-content;
+                    opacity: 60%;
+                    border-bottom: 0.0625rem solid $title-second-content-light;
                 }
             }
         }
@@ -135,6 +136,7 @@
             background-repeat: no-repeat;
             background-position: center bottom;
             background-size: cover;
+
             &-steel{
                 background-image: url('../../images/categories/7.jpg');
             }

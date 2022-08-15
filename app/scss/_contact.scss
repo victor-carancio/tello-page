@@ -55,7 +55,7 @@
         align-items: center;
         
         @include breakpoint-up(large){
-            min-height: 320px;
+            min-height: 20rem;
             width: 80%;
             flex-flow: row nowrap;
             justify-content: center;
@@ -111,7 +111,7 @@
 
             .ig-title{
                 @include breakpoint-up(large){
-                    margin-top: 14px;
+                    margin-top: 0.875rem;
                 }
             }
         }
@@ -169,7 +169,18 @@
     
 
     &-map{
+        width: auto;
+        height: 23.75rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
 
+       
+
+        @include breakpoint-up (large){
+            height: 41.875rem;
+        }
         .contact-place-info{
             
             width: 18.75rem;
@@ -178,10 +189,11 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
+            justify-content: center;
             @include breakpoint-up(large){
                 height: 14.0625rem;
                 flex-flow: column nowrap;
-                margin-top: 1.875rem;
+                
             }
             
             img{
@@ -227,6 +239,28 @@
                         color: $link-hover;
                     }
                 }
+            }
+        }
+
+        .mapouter-desktop{
+            
+            height:0;
+            width:0;
+            @include breakpoint-up(large){
+                position:relative;
+                text-align:right;
+                height:25rem;
+                width:40.625rem;
+            }
+        }
+        .gmap_canvas-desktop{
+            height:0rem;
+            width:0rem;
+            @include breakpoint-up(large){
+            overflow:hidden;
+            background:none!important;
+            height:25rem;
+            width:40.625rem;
             }
         }
 
