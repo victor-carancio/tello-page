@@ -149,7 +149,7 @@
 
             &-icon{
                 margin-bottom: 2.5rem;
-                width: 5rem;
+                width: 100px;
                 & path{
                     fill: $icon-color;
                 }
@@ -163,6 +163,15 @@
                 font-size: $font-l ;
                 font-weight: 600;
                 color: $title-second-content;
+            }
+
+            .iso-title{
+                padding-top: 25px;
+
+            }
+
+            .iso-p{
+                padding-bottom: 40px;
             }
 
             &-info{

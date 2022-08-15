@@ -777,10 +777,10 @@
 }
 .agency-second-content .card-icon {
   margin-bottom: 2.5rem;
-  width: 5rem;
+  width: 100px;
 }
 .agency-second-content .card-icon path {
-  fill: #005371;
+  fill: rgb(0, 82, 112);
 }
 .agency-second-content .card-title {
   font-family: "Oswald", sans-serif;
@@ -788,6 +788,12 @@
   font-size: 1.375rem;
   font-weight: 600;
   color: #005371;
+}
+.agency-second-content .card .iso-title {
+  padding-top: 25px;
+}
+.agency-second-content .card .iso-p {
+  padding-bottom: 40px;
 }
 .agency-second-content .card-info {
   letter-spacing: 0.0187rem;
@@ -801,7 +807,7 @@
   }
 }
 .agency-second-content .card-info a {
-  color: #005371;
+  color: rgb(0, 82, 112);
   font-weight: 600;
 }
 .agency-second-content .card-info a:hover {
