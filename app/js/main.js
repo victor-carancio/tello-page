@@ -10,7 +10,7 @@ const home = document.getElementById('home-btn');
 const client= document.getElementById('client-btn');
 const contact = document.querySelectorAll('.contact-btn');
 const project = document.querySelectorAll('.projects-btn');
-const projectSection = document.getElementById('projects');
+/* const projectSection = document.getElementById('projects'); */
 
 //animations
 const contactSection = document.querySelector('.contact');
@@ -59,13 +59,13 @@ contact.forEach((element) => {
 });
 
 
-project.forEach((element) => {
+/* project.forEach((element) => {
     element.addEventListener('click', () => {
         CloseHamburger();
         projectSection.scrollIntoView();
         window.scrollBy(0, -100);
     })
-})
+}) */
 
 function CloseHamburger(){
     header.classList.remove('open');
@@ -81,3 +81,5 @@ function CloseHamburger(){
         btnHamburger.classList.add('open');
     }
 }
+
+

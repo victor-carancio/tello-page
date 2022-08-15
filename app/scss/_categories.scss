@@ -17,62 +17,62 @@
         &-img{
             
             width: 100%;
-            height: 350px;
+            height: 21.875rem;
             @include breakpoint-up(medium){
                 width: 40%;
-                height: 450px;
+                height: 28.125rem;
             }
 
             @include breakpoint-up(large){
                 width: 60%;
-                height: 650px;
+                height: 40.625rem;
             }
         }
 
         &-info{
             width: 100%;
-            height: 350px;
+            height: 21.875rem;
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: flex-start;
 
             @include breakpoint-up(medium){
-                height: 450px;
+                height: 28.125rem;
                 width: 60%;
             }
 
             @include breakpoint-up(large){
-                height: 650px;
+                height: 40.625rem;
                 width: 40%;
             }
             
 
             p{
-                margin: 0 40px;
+                margin: 0 2.5rem;
                 
                 
                 &:not(:last-child){
-                    margin-bottom: 45px;
+                    margin-bottom: 2.8125rem;
                 }
             }
 
             .cat-info-title{
                 
-                font-size: 28px;
+                font-size: $h2-size;
                 font-weight: 600;
             }
 
             .cat-info-desc{
-                font-size: 16px;
+                font-size: $font-lmed;
                 font-weight: 400;
             }
 
             .cat-info-link{
-                margin: 0 40px;
+                margin: 0 2.5rem;
                 font-weight: 600;
-                font-size: 15px;
-                width: 110px;
+                font-size: $font-lmed;
+                width: 9.0625rem;
                 padding: 0.3125rem 0;
                 
             }

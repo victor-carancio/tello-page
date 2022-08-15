@@ -7,7 +7,7 @@
         align-items: center;
 
         .projects-header{
-            height: 300px;
+            height: 18.75rem;
             .projects-title{
                 margin: 1.875rem 0;
                 font-family: $font-fam-oswald;
@@ -28,13 +28,13 @@
         .item-title{
            
             font-family: $font-fam-oswald;
-            font-size: 25px;
+            font-size: 1.5625rem;
             font-weight: 600;
             color: $title-second-content;
             margin: 5rem 0;
             text-align: left;
             @include breakpoint-up(medium){
-                font-size: 35px;
+                font-size: 2.1875rem;
             }   
             
         }
@@ -57,10 +57,10 @@
 
             img{
                 
-                border-radius: 10px;
+                border-radius: 0.625rem;
                 box-shadow: $img-border-shadow;
-                width: 300px;
-                height: 300px;
+                width: 18.75rem;
+                height: 18.75rem;
                 object-fit: cover; 
                 margin: 0 1.25rem;
                 margin-bottom: 3.75rem;
@@ -74,7 +74,7 @@
 
     &-steel{
        
-        background-color: rgb(190, 190, 190);
+        background-color: $background-project;
         background-image: url('../../images/trabajos-tello/background/floating-cogs.svg');
         background-repeat: no-repeat;
         background-position:  left center;
@@ -84,7 +84,7 @@
 
     &-polyamide{
         
-        background-color: rgb(190, 190, 190);
+        background-color: $background-project;
         background-image: url('../../images/trabajos-tello/background/floating-cogs.svg');
         background-repeat: no-repeat;
         background-position:  left center;
@@ -94,7 +94,7 @@
     
 
     &-stainless{
-        background-color: rgb(190, 190, 190);
+        background-color: $background-project;
         background-image: url('../../images/trabajos-tello/background/floating-cogs.svg');
         background-repeat: no-repeat;
         background-position:  left center;
@@ -104,12 +104,49 @@
     
 
     &-projects{
-        background-color: rgb(190, 190, 190);
+        background-color: $background-project;
         background-image: url('../../images/trabajos-tello/background/floating-cogs.svg');
         background-repeat: no-repeat;
         background-position:  left center;
         background-size: cover;
        
+    }
+
+    .popup-image{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: $background-popup;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        display: none;
+
+        span{
+            position: absolute;
+            top: 0;
+            right: 0.625rem;
+            font-size: 3.75rem;
+            font-weight: bolder;
+            color: $white;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%), ;
+            border-radius: 0.625rem;
+            width: 80%;
+            object-fit: cover;
+
+            @include breakpoint-up(large){
+                width: 46.875rem;
+            }
+
+        }
     }
     
 }
