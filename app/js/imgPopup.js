@@ -13,3 +13,8 @@ document.querySelector('.popup-image span').onclick = () =>{
     document.querySelector('.popup-image').style.display = 'none';
     body.classList.remove('no-scroll');
 }
+
+document.querySelector('.popup-image').onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'none';
+    body.classList.remove('no-scroll');
+}
