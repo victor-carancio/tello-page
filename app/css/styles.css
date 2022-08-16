@@ -168,6 +168,11 @@
   color: rgb(163, 163, 163);
   font-size: 0.9375rem;
 }
+@media (min-width: 64em) {
+  .footer a {
+    font-size: 1.0625rem;
+  }
+}
 .footer a:hover {
   color: white;
 }
@@ -410,6 +415,11 @@
   font-size: 2.1875rem;
   margin-bottom: 1.25rem;
 }
+@media (min-width: 64em) {
+  .contact-header h2 {
+    font-size: 2.5rem;
+  }
+}
 .contact-header .contact-split {
   height: 0.1875rem;
   width: 40%;
@@ -424,10 +434,11 @@
   width: 75%;
   text-align: justify;
   color: rgb(245, 245, 245);
-  font-size: 1.0625rem;
+  font-size: 17px;
 }
 @media (min-width: 64em) {
   .contact-header p {
+    font-size: 1.1875rem;
     margin-top: 2.5rem;
     width: 80%;
   }
@@ -470,6 +481,11 @@
   font-size: 1.375rem;
   margin-bottom: 0.9375rem;
 }
+@media (min-width: 64em) {
+  .contact-adress .info-container p {
+    font-size: 1.6875rem;
+  }
+}
 .contact-adress .info-container a {
   letter-spacing: 0.0313rem;
   font-family: "Roboto", sans-serif;
@@ -479,6 +495,11 @@
 }
 .contact-adress .info-container a:hover {
   color: rgb(235, 235, 0);
+}
+@media (min-width: 64em) {
+  .contact-adress .info-container a {
+    font-size: 1.0625rem;
+  }
 }
 @media (min-width: 64em) {
   .contact-adress .info-container .info-title {
@@ -516,6 +537,7 @@
 }
 @media (min-width: 64em) {
   .contact-adress .contact-place img {
+    width: 50px;
     margin-left: 0;
     margin-top: 0.9375rem;
   }
@@ -544,6 +566,7 @@
 @media (min-width: 64em) {
   .contact-adress .contact-numbers img,
 .contact-adress .contact-email img {
+    width: 50px;
     margin-left: 0;
     margin-top: 0.9375rem;
   }
@@ -610,12 +633,22 @@
   font-size: 1.375rem;
   margin-bottom: 0.9375rem;
 }
+@media (min-width: 64em) {
+  .contact-map .contact-place-info .info-container p {
+    font-size: 1.6875rem;
+  }
+}
 .contact-map .contact-place-info .info-container a {
   letter-spacing: 0.0313rem;
   font-family: "Roboto", sans-serif;
   color: rgb(245, 245, 245);
   font-size: 0.9375rem;
   width: 12.5rem;
+}
+@media (min-width: 64em) {
+  .contact-map .contact-place-info .info-container a {
+    font-size: 1.0625rem;
+  }
 }
 .contact-map .contact-place-info .info-container a:hover {
   color: rgb(235, 235, 0);
@@ -705,7 +738,7 @@
   line-height: 1.4;
   margin-bottom: 2.1875rem;
   color: white;
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
 }
 @media (min-width: 40em) {
   .agency-info-container {
