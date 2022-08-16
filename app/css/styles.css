@@ -935,7 +935,7 @@
   font-weight: 600;
   color: #005371;
   margin: 5rem 0;
-  text-align: left;
+  text-align: center;
 }
 @media (min-width: 40em) {
   .projects-item .item-title {
