@@ -840,6 +840,18 @@
     width: 100px;
   }
 }
+.agency-second-content .card-icon-img {
+  /* margin-bottom: 2.5rem; */
+  width: 80px;
+}
+.agency-second-content .card-icon-img path {
+  fill: rgb(0, 82, 112);
+}
+@media (min-width: 64em) {
+  .agency-second-content .card-icon-img {
+    width: 100px;
+  }
+}
 .agency-second-content .card-title {
   font-family: "Oswald", sans-serif;
   margin-bottom: 1.5625rem;
@@ -1176,10 +1188,10 @@
   background-size: cover;
 }
 .categories .category .image-steel {
-  background-image: url("../../images/categories/7.jpg");
+  background-image: url("../../images/categories/2.jpg");
 }
 .categories .category .image-polyamide {
-  background-image: url("../../images/categories/2.jpg");
+  background-image: url("../../images/categories/7.jpg");
 }
 @media (min-width: 40em) {
   .categories .category .image-polyamide {

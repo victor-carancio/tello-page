@@ -153,6 +153,19 @@
                 }
             }
 
+            &-icon-img{
+                /* margin-bottom: 2.5rem; */
+                width: 80px;
+
+                & path {
+                    fill: $icon-color;
+                }
+
+                @include breakpoint-up(large) {
+                    width: 100px;
+                }
+            }
+
             &-title {
                 font-family: "Oswald", sans-serif;
                 margin-bottom: 1.5625rem;

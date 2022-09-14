@@ -136,11 +136,12 @@
             background-size: cover;
 
             &-steel {
-                background-image: url("../../images/categories/7.jpg");
+                background-image: url("../../images/categories/2.jpg");
             }
 
             &-polyamide {
-                background-image: url("../../images/categories/2.jpg");
+                background-image: url("../../images/categories/7.jpg");
+                
                 @include breakpoint-up(medium) {
                     order: 2;
                 }
