@@ -16,50 +16,50 @@ const AnimNameLeft = "animate__fadeInLeft";
 const AnimNameRight = "animate__fadeInRight";
 
 btnHamburger.addEventListener("click", () => {
-    if (header.classList.contains("open")) {
-        CloseHamburger();
-    } else {
-        header.classList.add("open");
-        headerContainer.classList.add("menu-open");
-        fadeElems.classList.remove("fade-out");
-        fadeElems.classList.add("fade-in");
-        body.classList.add("no-scroll");
-        btnHamburger.classList.add("open");
-    }
+  if (header.classList.contains("open")) {
+    CloseHamburger();
+  } else {
+    header.classList.add("open");
+    headerContainer.classList.add("menu-open");
+    fadeElems.classList.remove("fade-out");
+    fadeElems.classList.add("fade-in");
+    body.classList.add("no-scroll");
+    btnHamburger.classList.add("open");
+  }
 });
 
 home.addEventListener("click", () => {
-    CloseHamburger();
+  CloseHamburger();
 });
 client.addEventListener("click", () => {
-    CloseHamburger();
+  CloseHamburger();
 });
 
 contact.forEach((element) => {
-    element.addEventListener("click", () => {
-        CloseHamburger();
-        contactSection.scrollIntoView();
-        window.scrollBy(0, -100);
-        contactAnimLeft.forEach((e) => {
-            e.classList.add(AnimNameLeft);
-        });
-        contactAnimRight.forEach((e) => {
-            e.classList.add(AnimNameRight);
-        });
+  element.addEventListener("click", () => {
+    CloseHamburger();
+    contactSection.scrollIntoView();
+    window.scrollBy(0, -100);
+    contactAnimLeft.forEach((e) => {
+      e.classList.add(AnimNameLeft);
     });
+    contactAnimRight.forEach((e) => {
+      e.classList.add(AnimNameRight);
+    });
+  });
 });
 
 function CloseHamburger() {
-    header.classList.remove("open");
-    headerContainer.classList.remove("menu-open");
-    fadeElems.classList.remove("fade-in");
-    fadeElems.classList.add("fade-out");
-    setTimeout(() => fadeElems.classList.remove("fade-out"), 500);
-    body.classList.remove("no-scroll");
+  header.classList.remove("open");
+  headerContainer.classList.remove("menu-open");
+  fadeElems.classList.remove("fade-in");
+  fadeElems.classList.add("fade-out");
+  setTimeout(() => fadeElems.classList.remove("fade-out"), 500);
+  body.classList.remove("no-scroll");
 
-    if (btnHamburger.classList.contains("open")) {
-        btnHamburger.classList.remove("open");
-    } else {
-        btnHamburger.classList.add("open");
-    }
+  if (btnHamburger.classList.contains("open")) {
+    btnHamburger.classList.remove("open");
+  } else {
+    btnHamburger.classList.add("open");
+  }
 }
